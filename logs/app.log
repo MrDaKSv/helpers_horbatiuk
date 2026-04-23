@@ -1,9 +1,214 @@
-2026-03-25T20:25:03.584+02:00  INFO 10676 --- [api-service] [main] e.i.apiservice.ApiServiceApplication     : Starting ApiServiceApplication using Java 17.0.14 with PID 10676 (C:\Lessons\Course4_2\Virtual helpers\lab1-2\api-service\target\classes started by Bodya in C:\Lessons\Course4_2\Virtual helpers\lab1-2)
-2026-03-25T20:25:03.603+02:00  INFO 10676 --- [api-service] [main] e.i.apiservice.ApiServiceApplication     : No active profile set, falling back to 1 default profile: "default"
-2026-03-25T20:25:06.525+02:00  INFO 10676 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-03-25T20:25:06.564+02:00  INFO 10676 --- [api-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-25T20:25:06.565+02:00  INFO 10676 --- [api-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2026-03-25T20:25:06.718+02:00  INFO 10676 --- [api-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-25T20:25:06.719+02:00  INFO 10676 --- [api-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2938 ms
-2026-03-25T20:25:07.987+02:00  INFO 10676 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-03-25T20:25:08.004+02:00  INFO 10676 --- [api-service] [main] e.i.apiservice.ApiServiceApplication     : Started ApiServiceApplication in 5.865 seconds (process running for 8.619)
+2026-04-23T00:10:22.696+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-5] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 127.0.0.1 | Params: city=Chernivtsi
+2026-04-23T00:10:22.699+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-5] e.h.a.controller.WeatherController       : GET /weather - city: Chernivtsi
+2026-04-23T00:10:22.700+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-5] e.h.apiservice.service.WeatherService    : Fetching weather for city: Chernivtsi
+2026-04-23T00:10:22.700+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-5] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 9f90a59c2f0ad3191bc59fdfe59b7029
+2026-04-23T00:10:22.772+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-5] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 73ms
+2026-04-23T00:10:43.299+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-6] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 127.0.0.1 | Params: city=Kyiv
+2026-04-23T00:10:43.299+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-6] e.h.a.controller.WeatherController       : GET /weather - city: Kyiv
+2026-04-23T00:10:43.299+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-6] e.h.apiservice.service.WeatherService    : Fetching weather for city: Kyiv
+2026-04-23T00:10:43.299+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-6] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 9f90a59c2f0ad3191bc59fdfe59b7029
+2026-04-23T00:10:43.349+03:00  INFO 12732 --- [api-service] [http-nio-8080-exec-6] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 50ms
+2026-04-23T00:15:34.882+03:00  INFO 12732 --- [api-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-23T00:15:34.888+03:00  INFO 12732 --- [api-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-23T08:16:20.623+03:00  INFO 4104 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Starting ApiServiceApplication using Java 21.0.10 with PID 4104 (C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk\api-service\target\classes started by Богдан in C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk)
+2026-04-23T08:16:20.625+03:00  INFO 4104 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T08:16:21.208+03:00  INFO 4104 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-23T08:16:21.217+03:00  INFO 4104 --- [api-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T08:16:21.217+03:00  INFO 4104 --- [api-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-04-23T08:16:21.250+03:00  INFO 4104 --- [api-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-23T08:16:21.250+03:00  INFO 4104 --- [api-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2026-04-23T08:16:21.512+03:00  INFO 4104 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-23T08:16:21.516+03:00  INFO 4104 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Started ApiServiceApplication in 1.211 seconds (process running for 1.49)
+2026-04-23T08:16:27.930+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T08:16:27.930+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T08:16:27.931+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-23T08:16:27.947+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 0:0:0:0:0:0:0:1 | Params: none
+2026-04-23T08:16:27.959+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] e.h.a.controller.WeatherController       : GET /weather - city: Kyiv
+2026-04-23T08:16:27.976+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] e.h.apiservice.service.WeatherService    : Fetching weather for city: Kyiv
+2026-04-23T08:16:27.977+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 44fcf94f2f881afbb1f12df1df9a5897
+2026-04-23T08:16:28.325+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-1] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 377ms
+2026-04-23T08:16:32.198+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-2] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 0:0:0:0:0:0:0:1 | Params: none
+2026-04-23T08:16:32.198+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-2] e.h.a.controller.WeatherController       : GET /weather - city: Kyiv
+2026-04-23T08:16:32.199+03:00  INFO 4104 --- [api-service] [http-nio-8080-exec-2] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 1ms
+2026-04-23T08:16:39.573+03:00  INFO 4104 --- [api-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-23T08:16:39.579+03:00  INFO 4104 --- [api-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-23T08:31:38.366+03:00  INFO 16316 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Starting ApiServiceApplication using Java 21.0.10 with PID 16316 (C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk\api-service\target\classes started by Богдан in C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk)
+2026-04-23T08:31:38.367+03:00  INFO 16316 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T08:31:38.863+03:00  INFO 16316 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-23T08:31:38.870+03:00  INFO 16316 --- [api-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T08:31:38.870+03:00  INFO 16316 --- [api-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-04-23T08:31:38.897+03:00  INFO 16316 --- [api-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-23T08:31:38.898+03:00  INFO 16316 --- [api-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 504 ms
+2026-04-23T08:31:39.124+03:00  INFO 16316 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-23T08:31:39.127+03:00  INFO 16316 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Started ApiServiceApplication in 1.018 seconds (process running for 1.231)
+2026-04-23T08:36:10.139+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T08:36:10.139+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T08:36:10.140+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-23T08:36:10.157+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 127.0.0.1 | Params: city=%D1%87%D0%B5%D1%80%D0%BD%D0%B0%D1%83%D1%86%D0%B8
+2026-04-23T08:36:10.170+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] e.h.a.controller.WeatherController       : GET /weather - city: чернауци
+2026-04-23T08:36:10.184+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] e.h.apiservice.service.WeatherService    : Fetching weather for city: чернауци
+2026-04-23T08:36:10.185+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 44fcf94f2f881afbb1f12df1df9a5897
+2026-04-23T08:36:10.444+03:00  WARN 16316 --- [api-service] [http-nio-8080-exec-1] e.h.apiservice.service.WeatherService    : City not found: чернауци
+2026-04-23T08:36:10.446+03:00 ERROR 16316 --- [api-service] [http-nio-8080-exec-1] e.h.a.exception.GlobalExceptionHandler   : Runtime error: Місто не знайдено: чернауци
+2026-04-23T08:36:10.474+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-1] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 400 | Time: 316ms
+2026-04-23T08:36:25.524+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-2] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 127.0.0.1 | Params: city=Chernivtsi
+2026-04-23T08:36:25.525+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-2] e.h.a.controller.WeatherController       : GET /weather - city: Chernivtsi
+2026-04-23T08:36:25.525+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-2] e.h.apiservice.service.WeatherService    : Fetching weather for city: Chernivtsi
+2026-04-23T08:36:25.525+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-2] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 44fcf94f2f881afbb1f12df1df9a5897
+2026-04-23T08:36:25.604+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-2] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 80ms
+2026-04-23T08:36:36.018+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-3] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 127.0.0.1 | Params: city=Chernivtsi
+2026-04-23T08:36:36.018+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-3] e.h.a.controller.WeatherController       : GET /weather - city: Chernivtsi
+2026-04-23T08:36:36.019+03:00  INFO 16316 --- [api-service] [http-nio-8080-exec-3] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 1ms
+2026-04-23T08:36:42.802+03:00  INFO 16316 --- [api-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-23T08:36:42.808+03:00  INFO 16316 --- [api-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-23T08:49:31.516+03:00  INFO 30900 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Starting ApiServiceApplication using Java 21.0.10 with PID 30900 (C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk\api-service\target\classes started by Богдан in C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk)
+2026-04-23T08:49:31.518+03:00  INFO 30900 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T08:49:32.029+03:00  INFO 30900 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-23T08:49:32.036+03:00  INFO 30900 --- [api-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T08:49:32.036+03:00  INFO 30900 --- [api-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-04-23T08:49:32.066+03:00  INFO 30900 --- [api-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-23T08:49:32.066+03:00  INFO 30900 --- [api-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 522 ms
+2026-04-23T08:49:32.299+03:00  INFO 30900 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-23T08:49:32.303+03:00  INFO 30900 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Started ApiServiceApplication in 1.043 seconds (process running for 1.259)
+2026-04-23T08:52:21.399+03:00  INFO 30900 --- [api-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-23T08:52:21.405+03:00  INFO 30900 --- [api-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-23T08:59:47.509+03:00  INFO 15072 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Starting ApiServiceApplication using Java 21.0.10 with PID 15072 (C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk\api-service\target\classes started by Богдан in C:\Users\Богдан\Documents\GitHub\helpers_horbatiuk)
+2026-04-23T08:59:47.510+03:00  INFO 15072 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-04-23T08:59:48.023+03:00  INFO 15072 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-23T08:59:48.030+03:00  INFO 15072 --- [api-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-23T08:59:48.030+03:00  INFO 15072 --- [api-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-04-23T08:59:48.057+03:00  INFO 15072 --- [api-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-23T08:59:48.058+03:00  INFO 15072 --- [api-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 521 ms
+2026-04-23T08:59:48.290+03:00  INFO 15072 --- [api-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-23T08:59:48.294+03:00  INFO 15072 --- [api-service] [main] e.h.apiservice.ApiServiceApplication     : Started ApiServiceApplication in 1.047 seconds (process running for 1.26)
+2026-04-23T09:00:13.438+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-23T09:00:13.438+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-23T09:00:13.439+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-23T09:00:13.456+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 0:0:0:0:0:0:0:1 | Params: none
+2026-04-23T09:00:13.468+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] e.h.a.controller.WeatherController       : GET /weather - city: Kyiv
+2026-04-23T09:00:13.483+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] e.h.apiservice.service.WeatherService    : Fetching weather for city: Kyiv
+2026-04-23T09:00:13.483+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 44fcf94f2f881afbb1f12df1df9a5897
+2026-04-23T09:00:13.768+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-1] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 311ms
+2026-04-23T09:00:54.802+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-2] e.h.a.config.RequestLoggingInterceptor   : → GET //weather | IP: 0:0:0:0:0:0:0:1 | Params: city=Kyiv
+2026-04-23T09:00:54.804+03:00 ERROR 15072 --- [api-service] [http-nio-8080-exec-2] e.h.a.exception.GlobalExceptionHandler   : Unexpected error: No static resource weather.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource weather.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-04-23T09:00:54.810+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-2] e.h.a.config.RequestLoggingInterceptor   : ← GET //weather | Status: 500 | Time: 8ms
+2026-04-23T09:01:37.492+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-5] e.h.a.config.RequestLoggingInterceptor   : → GET //weather | IP: 0:0:0:0:0:0:0:1 | Params: none
+2026-04-23T09:01:37.494+03:00 ERROR 15072 --- [api-service] [http-nio-8080-exec-5] e.h.a.exception.GlobalExceptionHandler   : Unexpected error: No static resource weather.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource weather.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-04-23T09:01:37.495+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-5] e.h.a.config.RequestLoggingInterceptor   : ← GET //weather | Status: 500 | Time: 3ms
+2026-04-23T09:02:24.706+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-4] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 0:0:0:0:0:0:0:1 | Params: city=Kyiv
+2026-04-23T09:02:24.707+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-4] e.h.a.controller.WeatherController       : GET /weather - city: Kyiv
+2026-04-23T09:02:24.708+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-4] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 1ms
+2026-04-23T09:02:34.281+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-3] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 0:0:0:0:0:0:0:1 | Params: city=%20Chernivtsi
+2026-04-23T09:02:34.282+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-3] e.h.a.controller.WeatherController       : GET /weather - city:  Chernivtsi
+2026-04-23T09:02:34.282+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-3] e.h.apiservice.service.WeatherService    : Fetching weather for city:  Chernivtsi
+2026-04-23T09:02:34.282+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-3] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 44fcf94f2f881afbb1f12df1df9a5897
+2026-04-23T09:02:34.382+03:00  WARN 15072 --- [api-service] [http-nio-8080-exec-3] e.h.apiservice.service.WeatherService    : City not found:  Chernivtsi
+2026-04-23T09:02:34.383+03:00 ERROR 15072 --- [api-service] [http-nio-8080-exec-3] e.h.a.exception.GlobalExceptionHandler   : Runtime error: Місто не знайдено:  Chernivtsi
+2026-04-23T09:02:34.383+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-3] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 400 | Time: 102ms
+2026-04-23T09:02:44.101+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-6] e.h.a.config.RequestLoggingInterceptor   : → GET /weather | IP: 0:0:0:0:0:0:0:1 | Params: city=Chernivtsi
+2026-04-23T09:02:44.102+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-6] e.h.a.controller.WeatherController       : GET /weather - city: Chernivtsi
+2026-04-23T09:02:44.102+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-6] e.h.apiservice.service.WeatherService    : Fetching weather for city: Chernivtsi
+2026-04-23T09:02:44.102+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-6] e.h.apiservice.service.WeatherService    : OPENWEATHER KEY = 44fcf94f2f881afbb1f12df1df9a5897
+2026-04-23T09:02:44.166+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-6] e.h.a.config.RequestLoggingInterceptor   : ← GET /weather | Status: 200 | Time: 64ms
+2026-04-23T09:03:02.740+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-8] e.h.a.config.RequestLoggingInterceptor   : → GET /currency | IP: 0:0:0:0:0:0:0:1 | Params: base=EUR
+2026-04-23T09:03:02.740+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-8] e.h.a.controller.CurrencyController      : GET /currency - base: EUR
+2026-04-23T09:03:02.741+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-8] e.h.apiservice.service.CurrencyService   : Fetching currency rates for base: EUR
+2026-04-23T09:03:02.931+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-8] e.h.a.config.RequestLoggingInterceptor   : ← GET /currency | Status: 200 | Time: 191ms
+2026-04-23T09:03:10.788+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-7] e.h.a.config.RequestLoggingInterceptor   : → GET /currency | IP: 0:0:0:0:0:0:0:1 | Params: base=USD
+2026-04-23T09:03:10.788+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-7] e.h.a.controller.CurrencyController      : GET /currency - base: USD
+2026-04-23T09:03:10.788+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-7] e.h.apiservice.service.CurrencyService   : Fetching currency rates for base: USD
+2026-04-23T09:03:10.878+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-7] e.h.a.config.RequestLoggingInterceptor   : ← GET /currency | Status: 200 | Time: 90ms
+2026-04-23T09:03:17.808+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-9] e.h.a.config.RequestLoggingInterceptor   : → GET /currency | IP: 0:0:0:0:0:0:0:1 | Params: base=PLN
+2026-04-23T09:03:17.808+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-9] e.h.a.controller.CurrencyController      : GET /currency - base: PLN
+2026-04-23T09:03:17.808+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-9] e.h.apiservice.service.CurrencyService   : Fetching currency rates for base: PLN
+2026-04-23T09:03:17.906+03:00  INFO 15072 --- [api-service] [http-nio-8080-exec-9] e.h.a.config.RequestLoggingInterceptor   : ← GET /currency | Status: 200 | Time: 98ms
